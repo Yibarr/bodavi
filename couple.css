@@ -1,0 +1,79 @@
+/* Estilos generales para escritorio */
+.couple {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.men {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.img_men_bg {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.img_men_bg img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    max-height: 15rem;
+}
+
+.description_men {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f4f1;
+    width: 15rem;
+    position: absolute;
+    top: 85%;
+    z-index: 0;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.description_men h2 {
+    margin: 0;
+    margin-top: 2.5rem;
+    color: #BE7D3F;
+}
+
+.description_men p {
+    text-align: center;
+    color: #1B1B1B;
+    font-size: 10px;
+}
+
+.amper {
+    color: #efc4ba;
+    font-size: 50px;
+}
+
+
+@media (max-width: 500px) {
+    .couple {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .men {
+        margin-top: 3rem;
+    }
+}
