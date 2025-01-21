@@ -84,6 +84,7 @@ header .chevron {
     background-attachment: fixed;
     overflow: hidden;
     color: white;
+    margin-top: 10rem;
 }
 
 section .elementor-shape-fill {
