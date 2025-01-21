@@ -1,160 +1,236 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .upsidedown {
-    transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
 
 /* General Header Styles */
 header {
-    text-align: center;
-    background: url('shared/1.jpeg') no-repeat center center/cover;
-    background-attachment: fixed;
-    overflow: hidden;
-    color: white;
+  text-align: center;
+  background: url("shared/1.jpeg") no-repeat center center/cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  color: white;
 }
 
 /* Header Content */
 .header-content {
-    z-index: 1; /* Ensure it stays above SVGs */
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  z-index: 1; /* Ensure it stays above SVGs */
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Top SVG Styling */
 header .svg-1 {
-    width: 30vw; /* Adjust size to fit above the first h2 */
-    height: auto;
-    fill: #fafafa;
+  width: 30vw; /* Adjust size to fit above the first h2 */
+  height: auto;
+  fill: #fafafa;
 }
 
 /* General Styling for h1 and h2 */
 header h2 {
-    font-family: 'Antic Didone', Sans-serif;
-    font-size: 18px;
-    font-weight: 200;
-    letter-spacing: 5px;
-    color: white;
-    margin: 10px 0;
+  font-family: "Antic Didone", Sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 5px;
+  color: white;
+  margin: 10px 0;
 }
 
 header h1 {
-    font-family: 'Antic Didone', cursive;
-    font-size: 50px;
-    font-weight: 100;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.83);
-    color: white;
-    margin: 20px 0;
+  font-family: "Antic Didone", cursive;
+  font-size: 50px;
+  font-weight: 100;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.83);
+  color: white;
+  margin: 20px 0;
 }
 
 /* Bottom Wave SVG Styling */
 header .elementor-shape-fill {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    fill: #ffffff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  fill: #ffffff;
 }
 
 .wave-bottom {
-    margin-bottom: -10px;
+  margin-bottom: -10px;
 }
 
 .wave-top {
-    margin-top: -5px;
+  margin-top: -5px;
 }
 
 header .chevron {
-    width: 30px;
-    height: 30px;
-    margin-top: 20px;
-    fill: white;
-    animation: bounce 2s infinite;
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  fill: white;
+  animation: bounce 2s infinite;
 }
 
 .countdown-section {
-    text-align: center;
-    background: url('shared/3.jpeg') no-repeat center center/cover;
-    background-attachment: fixed;
-    overflow: hidden;
-    color: white;
-    margin-top: 15rem;
+  text-align: center;
+  background: url("shared/3.jpeg") no-repeat center center/cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  color: white;
+  margin-top: 15rem;
 }
 
 section .elementor-shape-fill {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    fill: #ffffff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  fill: #ffffff;
 }
 
 .countdown-content {
-    max-width: 80%;
-    min-height: 30vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  max-width: 80%;
+  min-height: 30vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .countdown-subtitle {
-    font-family: 'Corinthia', sans-serif;
-    font-size: 40px;
-    font-weight: 100;
-    color: #fafafa;
+  font-family: "Corinthia", sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  color: #fafafa;
 }
 
 .countdown {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 50%;
 }
 .countdown-item {
-    width: 110px;
-    height: 110px;
+  width: 110px;
+  height: 110px;
 }
 
 .countdown-digit {
-    font-family: 'Antic Didone', sans-serif;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.83);
-    font-size: 45px;
-    font-weight: 600;
+  font-family: "Antic Didone", sans-serif;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.83);
+  font-size: 45px;
+  font-weight: 600;
 }
 
 .countdown-item-label {
-    font-family: "Antic Didone", Sans-serif;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.83);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 5px;
+  font-family: "Antic Didone", Sans-serif;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.83);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 5px;
 }
 
 section .svg-2 {
-    width: 30vw; /* Adjust size to fit above the first h2 */
-    height: auto;
-    fill: #fafafa;
-    height: 120px;
-    margin: 40px 40px 40px 40px;
+  width: 30vw; /* Adjust size to fit above the first h2 */
+  height: auto;
+  fill: #fafafa;
+  height: 120px;
+  margin: 40px 40px 40px 40px;
 }
 
-
-
 .swiper-container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .swiper-slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.confirm {
+  background-color: #f9f9f9;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whats {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.icon {
+  width: 20%;
+  height: 100%;
+  background-color: #714a25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.butoons {
+  width: 80%;
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.buttons_container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons_container a {
+    text-decoration: none;
+}
+
+button {
+  background-color: #714a25;
+  text-decoration: none;
+  width: 10rem;
+  height: 7vh;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Antic Didone", sans-serif;
+  font-weight: 600;
+}
+
+.w-container {
     width: 100%;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.w-container p {
+    font-size: 25px;
+    font-family: "Antic Didone", sans-serif;
+    font-weight: 600;
+}
+.line {
+    border: 1px solid #E8AA78;
+    width: 70%;
+    margin-left: 2rem;
+}
+.c_text {
+    font-family: "Corinthia", sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    color: #714A25;
 }
