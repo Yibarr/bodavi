@@ -41,7 +41,12 @@
     justify-content: center;
     align-items: center;
 }
-svg {
+.img_svg svg {
+    fill: #FED2C8;
+    width: 7rem;
+    height: 7rem;
+}
+.second_svg svg {
     fill: #FED2C8;
     width: 7rem;
     height: 7rem;
@@ -72,6 +77,8 @@ p {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
 }
 .chair {
     width: 1rem;

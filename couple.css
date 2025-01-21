@@ -13,6 +13,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
+    z-index: 10;
 }
 
 .img_men_bg {
@@ -28,8 +29,8 @@
 
 .img_men_bg img {
     max-width: 100%;
-    width: 20rem;
-    height: 22rem;
+    width: auto;
+    height: auto;
     max-height: 15rem;
 }
 
@@ -75,5 +76,9 @@
     }
     .men {
         margin-top: 3rem;
+    }
+
+    .men_mobil {
+        margin-top: 7rem;
     }
 }
