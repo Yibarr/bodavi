@@ -146,14 +146,3 @@ section .svg-2 {
     margin: 40px 40px 40px 40px;
 }
 
-
-
-.swiper-container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.swiper-slide img {
-    width: 100%;
-    border-radius: 10px;
-}
