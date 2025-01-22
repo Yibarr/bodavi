@@ -1,42 +1,34 @@
-// Countdown Timer
-const eventDate = new Date('January 20, 2025 14:00:00').getTime();
+// Target date
+const targetDate = new Date('2025-03-08T00:00:00');
 
+// Function to calculate and update countdown
 function updateCountdown() {
-    const now = new Date().getTime();
-    const timeLeft = eventDate - now;
+    const now = new Date();
+    const timeDifference = targetDate - now;
 
-    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    // Calculate time units
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-    document.getElementById('timer').innerHTML = `
-        <div>${days}<span>días</span></div>
-        <div>${hours}<span>horas</span></div>
-        <div>${minutes}<span>minutos</span></div>
-        <div>${seconds}<span>segundos</span></div>
-    `;
+    // Update DOM
+    document.querySelector('.countdown-item-days .countdown-digit:first-child').textContent = String(days).padStart(2, '0')[0];
+    document.querySelector('.countdown-item-days .countdown-digit:last-child').textContent = String(days).padStart(2, '0')[1];
+    document.querySelector('.countdown-item-hours .countdown-digit:first-child').textContent = String(hours).padStart(2, '0')[0];
+    document.querySelector('.countdown-item-hours .countdown-digit:last-child').textContent = String(hours).padStart(2, '0')[1];
+    document.querySelector('.countdown-item-minutes .countdown-digit:first-child').textContent = String(minutes).padStart(2, '0')[0];
+    document.querySelector('.countdown-item-minutes .countdown-digit:last-child').textContent = String(minutes).padStart(2, '0')[1];
+    document.querySelector('.countdown-item-seconds .countdown-digit:first-child').textContent = String(seconds).padStart(2, '0')[0];
+    document.querySelector('.countdown-item-seconds .countdown-digit:last-child').textContent = String(seconds).padStart(2, '0')[1];
 
-    if (timeLeft < 0) {
-        clearInterval(timerInterval);
-        document.getElementById('timer').innerHTML = "¡El gran día ha llegado!";
+    // Stop the countdown at 0
+    if (timeDifference <= 0) {
+        clearInterval(interval);
+        document.querySelector('.countdown').innerHTML = '<h2>¡El día ha llegado!</h2>';
     }
 }
 
-// Run Countdown
-const timerInterval = setInterval(updateCountdown, 1000);
-
-const swiper = new Swiper('.swiper-container', {
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    autoplay: {
-        delay: 3000,
-    },
-});
+// Update countdown every second
+const interval = setInterval(updateCountdown, 1000);
+updateCountdown(); // Initial call to avoid 1-second delay
