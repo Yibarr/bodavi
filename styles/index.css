@@ -1,4 +1,4 @@
-/* General Reset */
+/* Common */
 * {
   margin: 0;
   padding: 0;
@@ -9,33 +9,45 @@
   transform: rotate(180deg);
 }
 
-/* General Header Styles */
-header {
-  text-align: center;
-  background: url("shared/1.jpeg") no-repeat center center/cover;
-  background-attachment: fixed;
-  overflow: hidden;
-  color: white;
+.antic-didone-regular {
+  font-family: "Antic Didone", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* Header Content */
-.header-content {
-  z-index: 1; /* Ensure it stays above SVGs */
-  max-width: 800px;
-  margin: 0 auto;
+.corinthia-regular {
+  font-family: "Corinthia", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.corinthia-bold {
+  font-family: "Corinthia", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background: url("../shared/1.jpeg") no-repeat center center/cover;
+  background-attachment: fixed;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-/* Top SVG Styling */
-header .svg-1 {
-  width: 30vw; /* Adjust size to fit above the first h2 */
-  height: auto;
-  fill: #fafafa;
+.header_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  margin-top: 36vh;
 }
 
-/* General Styling for h1 and h2 */
 header h2 {
   font-family: "Antic Didone", Sans-serif;
   font-size: 18px;
@@ -51,48 +63,64 @@ header h1 {
   font-weight: 100;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.83);
   color: white;
-  margin: 20px 0;
 }
 
-/* Bottom Wave SVG Styling */
-header .elementor-shape-fill {
-  bottom: 0;
-  left: 0;
+/* Introduction */
+
+.introduction {
   width: 100%;
-  fill: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 60px 0;
 }
 
-.wave-bottom {
-  margin-bottom: -10px;
+.introduction > h3, h2, p {
+  text-align: center;
 }
 
-.wave-top {
-  margin-top: -5px;
+.introduction_content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-header .chevron {
-  width: 30px;
-  height: 30px;
-  margin-top: 20px;
-  fill: white;
-  animation: bounce 2s infinite;
+.introduction_title_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.introduction_title_container h3 {
+  color: #BE7D3F;
+  font-size: 50px;
+  font-weight: 100;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.introduction_title_container h2 {
+  font-size: 80px;
+  margin: 0;
+}
+
+.introduction_content p {
+  font-size: 20px;
+  margin: 40px 0 40px 0;
+}
+
+/* Countdown */
 .countdown-section {
   text-align: center;
-  background: url("shared/3.jpeg") no-repeat center center/cover;
+  background: url("../shared/3.jpeg") no-repeat center center/cover;
   background-attachment: fixed;
   overflow: hidden;
   color: white;
-  margin-top: 15rem;
 }
 
-section .elementor-shape-fill {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  fill: #ffffff;
-}
 
 .countdown-content {
   max-width: 80%;
@@ -140,21 +168,11 @@ section .elementor-shape-fill {
 }
 
 section .svg-2 {
-  width: 30vw; /* Adjust size to fit above the first h2 */
+  width: 30vw;
   height: auto;
   fill: #fafafa;
   height: 120px;
   margin: 40px 40px 40px 40px;
-}
-
-.swiper-container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.swiper-slide img {
-  width: 100%;
-  border-radius: 10px;
 }
 
 .confirm {
@@ -165,7 +183,7 @@ section .svg-2 {
   align-items: center;
 }
 .whats {
-  width: 50%;
+  width: 80%;
   height: 60%;
   display: flex;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -180,7 +198,7 @@ section .svg-2 {
   align-items: center;
 }
 
-.butoons {
+.buttons {
   width: 80%;
   padding-left: 3rem;
   display: flex;
@@ -211,6 +229,7 @@ button {
   cursor: pointer;
   font-family: "Antic Didone", sans-serif;
   font-weight: 600;
+  margin-top: 40px;
 }
 
 .w-container {
@@ -233,4 +252,19 @@ button {
     font-size: 40px;
     font-weight: 100;
     color: #714A25;
+}
+
+@media (max-width: 1000px) {
+  .buttons_container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .confirm {
+    height: 60vh;
+  }
+
 }

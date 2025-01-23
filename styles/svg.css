@@ -1,0 +1,21 @@
+.laurel_1 {
+    width: 35vw;
+    height: auto;
+    fill: #fafafa;
+  }
+
+  .laurel_2 {
+    fill: #FED2C8;
+    width: 15rem;
+  }
+
+  .wave {
+    fill: #FFF;
+  }
+
+  .chevron {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    fill: white;
+  }
