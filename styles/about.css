@@ -1,22 +1,23 @@
-/* Estilos generales para escritorio */
-.couple {
+/* About */
+.about {
   width: 100%;
+  height: 150vh;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+  z-index: 4;
 }
 
-.men {
+.about_card {
   width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
-  z-index: 10;
 }
 
-.img_men_bg {
+.about_card_img {
   width: auto;
   display: flex;
   justify-content: center;
@@ -27,14 +28,14 @@
   z-index: 1;
 }
 
-.img_men_bg img {
+.about_card_img img {
   width: 100%;
   width: auto;
   height: auto;
   max-height: 35rem;
 }
 
-.description_men {
+.about_card_description {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,43 +49,27 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.description_men h2 {
+.about_card_description h2 {
   margin: 0;
   margin-top: 2.5rem;
   color: #be7d3f;
   font-size: 35px;
 }
 
-.description_men p {
+.about_card_description p {
   text-align: center;
   color: #1b1b1b;
   font-size: 20px;
 }
 
-.amper {
+.ampersand {
   color: #efc4ba;
   font-size: 80px;
 }
 
-@media (max-width: 500px) {
-  /* .couple {
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .description_men {
-        width: 20rem;
-    }
-    .men {
-        margin-top: 20rem;
-    }
+@media (max-width: 1000px) {
 
-    .men_mobil {
-        margin-top: 7rem;
-    } */
-  .couple {
+  .about {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -93,7 +78,8 @@
     margin: 0;
     margin-top: 3rem;
   }
-  .description_men {
+
+  .about_card_description {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +93,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .img_men_bg {
+  .about_card_img {
     width: auto;
     display: flex;
     justify-content: center;
@@ -118,13 +104,14 @@
     z-index: 1;
   }
 
-  .img_men_bg img {
+  .about_card_img img {
     width: 100%;
     width: auto;
     height: auto;
     max-height: 20rem;
   }
+
   .men_mobil {
     margin-top: 14rem;
-}
+  }
 }
