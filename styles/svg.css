@@ -5,7 +5,7 @@
   }
 
   .laurel_2 {
-    fill: #FED2C8;
+    fill: #BE7D3F;
     width: 15rem;
   }
 
@@ -27,12 +27,21 @@
   }
 
   .flower_1 {
-    fill: #FED2C8;
+    fill: #BE7D3F;
     width: 12vw;
+  }
+
+  .flower_2 {
+    fill: #714A25;
   }
 
   .gift {
     fill: #FFFF;
     width: 5vw;
     height: 10vh;
+  }
+
+  .whatsapp_icon {
+    font-size: 300% !important;
+    color:white
   }
