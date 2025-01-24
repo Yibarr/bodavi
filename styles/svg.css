@@ -30,3 +30,9 @@
     fill: #FED2C8;
     width: 12vw;
   }
+
+  .gift {
+    fill: #FFFF;
+    width: 5vw;
+    height: 10vh;
+  }
