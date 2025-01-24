@@ -396,7 +396,7 @@ section .svg-2 {
 }
 
 .gift_table_content h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 24px;
   text-align: center;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.83);
@@ -409,7 +409,7 @@ section .svg-2 {
 }
 
 .gift_table_content p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   max-width: 60%;
   line-height: 2;
@@ -424,11 +424,27 @@ section .svg-2 {
   margin-bottom: 24px;
 }
 
-.gift_link_container {
-  width: 100%;
+.gift_table_buttons_container {
+  width: 72%;
   background-color: #FFF;
   display: flex;
+  justify-content: space-around;
+  padding: 24px 0;
+  border-radius: 6px;
+  border: solid #BE7D3F 0.5px
+}
+
+.gift_table_button_item {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.gift_button_icon_label {
+  color: #BE7D3F;
+  font-size: 1.2rem;
+  padding: 24px 0;
+  text-shadow: none;
 }
 
 /* RSVP */
@@ -588,6 +604,14 @@ section .svg-2 {
     background-attachment: initial;
   }
 
+  .gift_table_buttons_container {
+    flex-direction: column;
+  }
+
+  .gift_table_button_item {
+    padding: 24px 0;
+  }
+
   /* RSVP */
   .rsvp_photo_card {
     display: grid;
@@ -595,7 +619,9 @@ section .svg-2 {
   }
 
   .whatsapp_confirmation_card_buttons_container {
+    width: 60%;
     flex-direction: column;
+    margin: auto;
   }
 
   .whatsapp_confirmation_card {
