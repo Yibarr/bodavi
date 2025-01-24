@@ -45,3 +45,8 @@
     font-size: 300% !important;
     color:white
   }
+
+  .gift_button_icon {
+    width: 48px;
+    fill: #BE7D3F;
+  }
