@@ -1,52 +1,67 @@
 .laurel_1 {
-    width: 35vw;
-    height: auto;
-    fill: #fafafa;
-  }
+  width: 40vw;
+  height: auto;
+  fill: #fafafa;
+}
 
-  .laurel_2 {
-    fill: #BE7D3F;
-    width: 15rem;
-  }
+.laurel_2 {
+  fill: #BE7D3F;
+  width: 15rem;
+}
 
-  .laurel_3 {
-    fill: #BE7D3F;
-    width: 12vw;
-    margin-left: 80px
-  }
+.laurel_3 {
+  fill: #BE7D3F;
+  width: 12vw;
+  margin-left: 80px
+}
 
-  .wave {
-    fill: #FFF;
-  }
+.wave {
+  fill: #FFF;
+}
 
-  .chevron {
-    width: 30px;
-    height: 30px;
-    margin-top: 20px;
-    fill: white;
-  }
+.chevron {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  fill: white;
+}
 
-  .flower_1 {
-    fill: #BE7D3F;
-    width: 12vw;
-  }
+.flower_1 {
+  fill: #BE7D3F;
+  width: 12vw;
+}
 
-  .flower_2 {
-    fill: #714A25;
-  }
+.flower_2 {
+  fill: #714A25;
+}
 
-  .gift {
-    fill: #FFFF;
-    width: 5vw;
-    height: 10vh;
-  }
+.gift {
+  fill: #FFFF;
+  width: 24vw;
+  height: 10vh;
+}
 
-  .whatsapp_icon {
-    font-size: 300% !important;
-    color:white
-  }
+.whatsapp_icon {
+  font-size: 300% !important;
+  color:white
+}
 
-  .gift_button_icon {
-    width: 48px;
-    fill: #BE7D3F;
+.gift_button_icon {
+  width: 48px;
+  fill: #BE7D3F;
+}
+
+  @media (max-width: 767px) {
+    .laurel_1 {
+      width: 72vw;
+    }
+
+    .laurel_3 {
+      margin-left: 0;
+      width: 72vw;
+    }
+
+    .flower_1 {
+      width: 30vw;
+    }
   }
