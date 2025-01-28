@@ -367,6 +367,55 @@ section .svg-2 {
   margin-bottom: 24px;
 }
 
+/* Dress Code */
+.dress_code_section {
+  background: url("../shared/6.jpeg") no-repeat center center/cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+.dress_code_content {
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 1 / 1;
+  grid-row: 2 / 3;
+}
+
+.dress_code_content {
+  color: #FFFF;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.dress_code_content h2 {
+  font-size: 4rem;
+  margin-top: 24px;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.83);
+}
+
+.dress_code_content h3 {
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.83);
+}
+
+.dress_code_content p {
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 60%;
+  line-height: 2;
+  margin-bottom: 24px;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.83);
+}
+
 /* Location */
 .location_container {
   display: grid;
