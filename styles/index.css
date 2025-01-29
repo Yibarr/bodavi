@@ -53,7 +53,7 @@
   margin: 1rem;
 }
 
-.card {
+.bodavi_card {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -147,7 +147,6 @@ header h1 {
 }
 
 /* Introduction */
-
 .introduction {
   width: 100%;
   display: flex;
@@ -202,7 +201,7 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 24px;
+  margin: 48px 24px;
 }
 
 .ampersand {
@@ -369,7 +368,7 @@ section .svg-2 {
 
 /* Dress Code */
 .dress_code_section {
-  background: url("../shared/6.jpeg") no-repeat center center/cover;
+  background: url("../shared/location_1.jpeg") no-repeat center center/cover;
   background-attachment: fixed;
   overflow: hidden;
   display: grid;
@@ -478,6 +477,85 @@ section .svg-2 {
 
 .location_card_content p {
   margin-bottom: 24px;
+}
+
+/* Photo Gallery */
+.photo_gallery_section {
+  padding: 24px 0vw;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.photo_gallery_section h2 {
+  text-align: center;
+  color: #BE7D3F;
+  font-size: 3rem;
+}
+
+.photo_gallery_section h3 {
+  text-align: center;
+  color: #BE7D3F;
+  font-size: 1.5rem;
+}
+
+.photo_gallery_section p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.photo_gallery_subtitle_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.swiper {
+  width: 90%;
+  height: 72vh;
+  margin-bottom: 24px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background: url("../shared/1.jpeg") no-repeat center center/cover;
+}
+
+.swiper-slide:nth-child(2n) {
+  background: url("../shared/2.jpeg") no-repeat center center/cover;
+}
+
+.swiper-slide:nth-child(3n) {
+  background: url("../shared/3.jpeg") no-repeat center center/cover;
+}
+
+.swiper-slide:nth-child(4n) {
+  background: url("../shared/4.jpeg") no-repeat center center/cover;
+}
+
+.swiper-slide:nth-child(5n) {
+  background: url("../shared/5.jpeg") no-repeat center center/cover;
+}
+
+.swiper-slide:nth-child(6n) {
+  background: url("../shared/7.jpeg") no-repeat center center/cover;
+}
+
+.swiper-slide:nth-child(7n) {
+  background: url("../shared/8.jpeg") no-repeat center center/cover;
 }
 
 /* Gift Table */
@@ -681,10 +759,6 @@ section .svg-2 {
     grid-template-rows: 1fr 48px 1fr;
   }
 
-  .ampersand_container {
-    display: none;
-  }
-
 /* Countdown */
   .countdown_section {
     background: url("../shared/3.jpeg") no-repeat top center/cover;
@@ -714,6 +788,12 @@ section .svg-2 {
 
   .hide_on_mobile {
     display: none;
+  }
+
+  /* Dress Code */
+  .dress_code_section {
+    background: url("../shared/location_1.jpeg") no-repeat bottom center/cover;
+    background-attachment: initial;
   }
 
   /* Location */

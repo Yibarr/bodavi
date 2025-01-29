@@ -32,3 +32,9 @@ function updateCountdown() {
 // Update countdown every second
 const interval = setInterval(updateCountdown, 1000);
 updateCountdown(); // Initial call to avoid 1-second delay
+
+
+var swiper = new Swiper(".mySwiper", {
+    effect: "cards",
+    grabCursor: true,
+  });

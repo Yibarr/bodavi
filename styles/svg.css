@@ -29,6 +29,7 @@
 .flower_1 {
   fill: #BE7D3F;
   width: 12vw;
+  z-index: -1;
 }
 
 .flower_2 {
