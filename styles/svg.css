@@ -6,7 +6,7 @@
 
 .laurel_2 {
   fill: #BE7D3F;
-  width: 15rem;
+  width: 18vw;
 }
 
 .laurel_3 {
@@ -55,6 +55,10 @@
   @media (max-width: 767px) {
     .laurel_1 {
       width: 72vw;
+    }
+
+    .laurel_2 {
+      width: 36vw;
     }
 
     .laurel_3 {

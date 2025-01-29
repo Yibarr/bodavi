@@ -12,7 +12,7 @@
     compartirlos con personas como tú los convierte en recuerdos imborrables. Es por ello que
     tenemos el
     honor de invitarte a celebrar con nosotros el inicio de esta hermosa aventura.[…]">
-    <meta property="og:image" content="./shared/1.jpeg">
+    <meta property="og:image" content="https://nuestrabodavi.com/shared/1.jpeg">
     <meta property="og:site_name" content="Bodas">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/svg.css">
@@ -26,7 +26,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
     <link rel="manifest" href="./favicon/site.webmanifest" />
 </head>
-
 <body>
     <header>
         <div class="header_content">
@@ -73,7 +72,21 @@
             <path d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
         </svg>
     </header>
-    <section class="introduction">
+    <section class="player_section">
+        <div class="player_subtitle_container">
+            <h2 class="antic_didone_regular">
+                PRESIONA EL BOTÓN DE PLAY Y DESLIZA HACIA ABAJO
+            </h2>
+        </div>
+        <div class="audio-player">
+            <button id="playPause" class="play-btn"></button>
+            <span id="current-time">00:00</span>
+            <input type="range" id="progress-bar" value="0" max="100">
+            <span id="duration">00:00</span>
+            <audio id="audio" src="./shared/beso.mp3"></audio>
+        </div>
+    </section>
+    <section class="introduction_section">
         <div class="introduction_content">
             <div class="introduction_title_container">
                 <svg xmlns="http://www.w3.org/2000/svg" class="laurel_2" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px"
@@ -351,7 +364,9 @@
                 <div class="swiper-slide"></div>
             </div>
           </div>
-          <p class="antic_didone_regular">Desliza hacia los lados para desplazarte por la galería</p>
+          <div class="photo_gallery_label">
+              <p class="antic_didone_regular">Desliza hacia los lados para desplazarte por la galería</p>
+          </div>
     </section>
     <section class="gift_table_section">
         <svg  class="wave upsidedown" xmlns="http://www.w3.org/2000/svg" class="upsidedown" viewBox="0 0 1000 100"
