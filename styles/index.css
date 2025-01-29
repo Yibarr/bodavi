@@ -369,8 +369,6 @@ section .svg-2 {
 /* Dress Code */
 .dress_code_section {
   background-color: #E8AA78;
-  overflow: hidden;
-  display: grid;
   padding: 48px 0;
 }
 
